@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS DOM</title>
+
+</head>
+
+<body>
+    <p id="myp" class="myclass2 myclass3" style="color: black; background-color: darkgray;">Paragraph</p>
+    <script>
+        var p = document.getElementById("myp");
+        var cs = p.style;
+        cs.setProperty("font-size", "90px", "important");
+        console.log(p);
+    </script>
+</body>
+
+</html>

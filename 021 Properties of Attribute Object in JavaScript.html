@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="geek">JavaScript</title>
+</head>
+
+<body>
+    <h1 id="myid" class="myclass">We are Learning JS
+        <!-- This is Comment -->
+    </h1>
+    <p id="myid1">I am Paragraph</p>
+
+    <script>
+        // Attribute Properties 
+        var result = document.getElementById("myid");
+
+        document.write(result.attributes[0].name);
+        document.write(result.attributes[0].value);
+        document.write(result.attributes[1].name);
+        document.write(result.attributes[1].value);
+        document.write(result.attributes.length);
+        var len = result.attributes.length;
+
+        for (let i = 0; i < len; i++) {
+            document.write(result.attributes[i].name);
+            document.write(result.attributes[i].value);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

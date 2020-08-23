@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tree</title>
+</head>
+
+<body>
+    <div id="myid">
+        <h1>We are Learning Js</h1>
+        <h1>I am h1</h1>
+    </div>
+    <script>
+        var targetNode = document.getElementById("myid");
+
+        targetNode.appendChild(document.createTextNode("Hello "));
+        targetNode.appendChild(document.createTextNode("My Name "));
+        targetNode.appendChild(document.createTextNode("is Bangladehs"));
+
+        targetNode.normalize();
+        console.log(targetNode.childNodes);
+
+    </script>
+</body>
+
+</html>

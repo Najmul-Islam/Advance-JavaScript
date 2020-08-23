@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tree</title>
+</head>
+
+<body>
+    <div>
+        <h3>JS FrameWorks</h3>
+        <ul id="myul">
+            <li>Jquery</li>
+            <li id="myang">Angular JS</li>
+            <li>React JS</li>
+            <li id="myd3">D3 JS</li>
+        </ul>
+
+        <ul>
+            <li>Java Programming</li>
+            <li id="myc">C++ Programming</li>
+        </ul>
+    </div>
+    <script>
+        /*
+        var parentNode = document.getElementById("myul");
+        var newNode = document.createElement("li");
+        newNode.textContent = "Backbone JS";
+        var refNode = document.getElementById("myang");
+        parentNode.insertBefore(newNode, null);
+        console.log(parentNode);
+        */
+
+        /*
+        var parentNode = document.getElementById("myul");
+        var moveNode = document.getElementById("myd3");
+        var refNode = document.getElementById("myang");
+        parentNode.insertBefore(moveNode, refNode);
+        */
+
+        /*
+        var parentNode = document.getElementById("myul");
+        var txtNode = document.createTextNode("Hello World");
+        var refNode = document.getElementById("myang");
+        parentNode.insertBefore(txtNode, refNode);
+        */
+
+        var parentNode = document.getElementById("myul");
+        var moveNode = document.getElementById("myc");
+        var refNode = document.getElementById("myang");
+        parentNode.insertBefore(moveNode, refNode);
+
+
+    </script>
+</body>
+
+</html>

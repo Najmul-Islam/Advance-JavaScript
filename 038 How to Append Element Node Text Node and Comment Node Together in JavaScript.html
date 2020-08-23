@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tree</title>
+</head>
+
+<body>
+    <div id="myid">
+        <h1>We are Learning Js</h1>
+        <h1>I am h1</h1>
+    </div>
+    <script>
+        // Creating new element h2
+        var nENode = document.createElement("h2");
+
+        // Creating Text Node
+        var nTNode = document.createTextNode("Text by JavaScrpt");
+
+        // Creating Comment Node
+        var nCNode = document.createComment("Comment by js");
+
+        // Append New Text Node to  New Element Node (h2)
+        nENode.appendChild(nTNode);
+
+        var targetNode = document.getElementById("myid");
+
+        // Append New Element Node to Div
+        targetNode.appendChild(nENode);
+        targetNode.appendChild(nCNode);
+
+        console.log(targetNode);
+
+    </script>
+</body>
+
+</html>

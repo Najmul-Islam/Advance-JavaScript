@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS DOM</title>
+</head>
+
+<body>
+
+    <ul id="myul">
+        <li>Item 1</li>
+        <li id="item-2">Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <script>
+        var u = document.getElementById("myul");
+        var i = document.getElementById("item-2");
+        u.removeChild(i);
+
+    </script>
+</body>
+
+</html>

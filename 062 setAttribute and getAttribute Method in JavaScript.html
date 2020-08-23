@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS DOM</title>
+</head>
+
+<body>
+
+    <p class="myclass" id="myp" style="background-color: red; font-size: 50px;">Paragraph</p>
+    <script>
+        var p = document.getElementById("myp");
+        //p.className = "myclassbangladesh";
+        //p.setAttribute("class", "myclassbangladesh");
+        p.setAttribute("title", "mytitle");
+        // p.setAttribute("style", "font-style: italic");
+        p.style.fontStyle = "italic";
+        console.log(p);
+    </script>
+</body>
+
+</html>

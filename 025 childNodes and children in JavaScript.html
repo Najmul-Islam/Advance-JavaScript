@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tree</title>
+</head>
+
+<body>
+    <h1 id="myid">
+        <!-- This is comment-->
+        <span>We are Learning Js</span>
+        <em>Hello</em>
+    </h1>
+    <p id="myid1">I am Paragraph</p>
+    <p id="myid2"><span>I am span</span> I am Paragraph</p>
+
+    <script>
+        // childNodes vs children
+
+        // var result = document.getElementById("myid2");
+        // console.log(result.children);
+
+        // Length
+        // var result = document.getElementById("myid");
+        // var len = result.children.length;
+
+        // console.log(len);
+        // console.log(result.children);
+
+        // Loop
+
+        var result = document.getElementById("myid");
+        var cnlen = result.children.length;
+
+        for (let i = 0; i < cnlen; i++) {
+            document.write(result.children[i].textContent);
+        }
+
+    </script>
+</body>
+
+</html>
