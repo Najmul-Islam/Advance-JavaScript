@@ -6,17 +6,42 @@
 </head>
 
 <body>
+    <table border="1" id="mytab">
+        <caption>My Table Caption</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+        <tbody id="mytbody">
+            <tr>
+                <td>11</td>
+                <td>Rahul</td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Sonam</td>
+                <td id="mytd">PHP</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>55</td>
+                <td>Rohan</td>
+                <td>JSP</td>
+            </tr>
+        </tfoot>
+    </table>
 
-    <ul id="myul">
-        <li>Item 1</li>
-        <li id="item-2">Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-    </ul>
     <script>
-        var u = document.getElementById("myul");
-        var i = document.getElementById("item-2");
-        u.removeChild(i);
+        var mytable = document.getElementById("mytab");
+        var myrow = mytable.rows;
+        console.log(myrow[2].cells.namedItem("mytd"));
+
+
 
     </script>
 </body>
