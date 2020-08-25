@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS DOM</title>
+</head>
+
+<body>
+    <h1>Event Handling</h1>
+
+    <button id="mybtn">Click Me</button>
+
+    <script>
+        // var btn = document.getElementById("mybtn");
+        // btn.onclick = function () { alert("Button Clicked"); };
+
+        //document.getElementById("mybtn").onclick = function () { alert("Button Clicked"); };
+
+        function disp() {
+            alert("Button Clicked");
+        }
+        document.getElementById("mybtn").onclick = disp;
+    </script>
+</body>
+
+</html>

@@ -7,17 +7,12 @@
 
 <body>
 
-    <ul id="myul">
-        <li>Item 1</li>
-        <li id="item-2">Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-    </ul>
+    <p id="myp">This is <span>Para</span><em>graph</em></p>
     <script>
-        var u = document.getElementById("myul");
-        var i = document.getElementById("item-2");
-        u.removeChild(i);
-
+        var p = document.getElementById("myp");
+        p.textContent = "<h1>Hello World</h1>"
+        console.log(p.textContent);
+        console.log(p);
     </script>
 </body>
 

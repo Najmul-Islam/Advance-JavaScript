@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS DOM</title>
+</head>
+
+<body>
+
+    <h1>Event Object</h1>
+    <p id="myp">Click Me</p>
+
+    <script>
+        document.getElementById("myp").addEventListener("click", function (e) {
+            console.log(e.clientX);
+            console.log(e.clientY);
+        });
+    </script>
+</body>
+
+</html>

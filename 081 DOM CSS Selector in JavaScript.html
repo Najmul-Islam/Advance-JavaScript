@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS DOM</title>
+</head>
+
+<body>
+    <h1 title="myheading">Heading 1</h1>
+    <img src="081-img/download.jpg" alt="catimage" width="30%" height="20%">
+    <img src="081-img/download.png" alt="jsimage" width="30%" height="20%">
+
+    <div>
+        <ul id="my1">
+            <li class="game">Item 1</li>
+            <li class="supergame">Item 2</li>
+            <li class="game-super">Item 3</li>
+            <li class="gamesuperd">Item 4</li>
+            <li class="super-game">Item 5</li>
+            <li class="game super">Item 6</li>
+            <li class="super game">Item 7</li>
+            <li class="super">Item 8</li>
+        </ul>
+    </div>
+    <p title="mypara1" class="red black">This paragraph 1</p>
+    <p title="mypara2" class="red">This paragraph 2</p>
+    <p title="mypara3" class="black">This paragraph 3</p>
+    <p title="mypara4" id="book">This paragraph 4</p>
+    <p>This is paragraph 5</p>
+    <h3 class="red">Heading 3</h3>
+    <h4 id="book">Heading 4</h4>
+
+    <script>
+        // Css Selector DOM
+        // Element Selector
+        var list = document.querySelectorAll("p");
+        // console.log(list);
+        // console.log(list.length);
+        // console.log(list[0]);
+
+        var list = document.querySelectorAll("p, div, li");
+        // console.log(list);
+        // console.log(list.length);
+        // console.log(list[0]);
+
+        var list = document.querySelectorAll("*");
+        // console.log(list);
+
+        // Class selector or style class
+        var list = document.querySelectorAll(".game");
+        // console.log(list);
+        // console.log(list.length);
+        // console.log(list[0]);
+
+        // Element Specific Style Class
+        var list = document.querySelectorAll("p.red");
+        // console.log(list);
+
+        // Element Specific Style Class More specific
+        var list = document.querySelectorAll("p.red.black");
+        // console.log(list);
+
+        // ID selector
+        var list = document.querySelectorAll("p#book");
+        // console.log(list);
+
+        // Attribute Selector
+        var list = document.querySelectorAll("img[width = '30%'][height = '20%']");
+        //console.log(list);
+        var list = document.querySelectorAll("[class ~= 'game']");
+        //console.log(list);
+        var list = document.querySelectorAll("[class |= 'game']");
+        //console.log(list);
+        var list = document.querySelectorAll("[class ^= 'game']");
+        //console.log(list);
+        var list = document.querySelectorAll("[class $= 'game']");
+        //console.log(list);
+        var list = document.querySelectorAll("[class *= 'ga']");
+        // console.log(list);
+
+        // Psedoue Class
+
+        // first-child
+        var list = document.querySelectorAll(":first-child");
+        var list = document.querySelectorAll("li:first-child");
+        console.log(list);
+
+        // last-child
+        var list = document.querySelectorAll(":last-child");
+        //console.log(list);
+    </script>
+</body>
+
+</html>
