@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS DOM</title>
+</head>
+
+<body>
+    <form action="" name="myform" id="myformid">
+        Username: <input type="text" name="m_username_field" id="username_id"> <br><br>
+
+        Password: <input type="password" name="m_password_field" id="password_id"><br><br>
+        <input type="submit" name="m_sbtn" value="Submit"><br>
+    </form>
+    <script>
+        var usrname = document.myform.username_id;
+        usrname.value = "Rohit";
+
+    </script>
+</body>
+
+</html>

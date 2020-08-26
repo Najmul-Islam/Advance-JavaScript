@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS DOM</title>
+</head>
+
+<body>
+    <p id="myp">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolor dolore, rem, numquam officia unde iusto
+        fugiat maxime blanditiis corporis, nesciunt neque. Minima accusantium eius ut, ad quod aut, deserunt ipsum nulla
+        quia cumque vel. Excepturi, expedita molestias rerum veniam animi suscipit, temporibus labore vel voluptates
+        minus obcaecati, odio accusamus.
+    </p>
+    <button type="button" id="mybtn">Clear Time</button>
+
+    <script>
+
+
+        // setTimeout(function () {
+        //     document.getElementById("myp").style = "color:red";
+        // }, 5000);
+
+        var timeoutID = setTimeout(() => {
+            document.getElementById("myp").style = "color:blue";
+        }, 5000);
+
+        function clrtime() {
+            clearTimeout(timeoutID);
+        }
+        document.getElementById("mybtn").addEventListener("click", clrtime);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

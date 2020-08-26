@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS DOM</title>
+</head>
+
+<body>
+    <h1>Print Document</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt sit esse inventore blanditiis sed velit nisi
+        harum. Adipisci laborum, officia praesentium culpa ratione consectetur! Officiis commodi illum eius quaerat
+        voluptas nisi voluptatum, placeat nulla laudantium debitis quam vero recusandae, magni hic consectetur? Dolor
+        mollitia eaque reiciendis beatae eligendi placeat recusandae.
+    </p>
+    <button type="button" id="btn">Print</button>
+
+    <script>
+        function printDoc() {
+            window.print();
+        }
+        document.getElementById("btn").addEventListener("click", printDoc);
+
+
+
+    </script>
+</body>
+
+</html>

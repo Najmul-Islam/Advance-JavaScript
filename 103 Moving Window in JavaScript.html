@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS DOM</title>
+</head>
+
+<body>
+    <h1>Moving Widow</h1>
+    <button type="button" id="openbtn">Open Window</button>
+    <button type="button" id="movebtn">Move Window</button>
+
+    <script>
+        var newWindow;
+        function openWin() {
+            newWindow = window.open("", "newWindow", "width=300, height=200");
+            newWindow.document.write("I am new window");
+        }
+
+        function moveWin() {
+            // newWindow.moveBy(200, 200);
+            newWindow.moveTo(200, 200);
+            newWindow.focus();
+        }
+
+        document.getElementById("openbtn").addEventListener("click", openWin);
+        document.getElementById("movebtn").addEventListener("click", moveWin);
+
+
+
+    </script>
+</body>
+
+</html>

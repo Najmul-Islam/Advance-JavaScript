@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS DOM</title>
+</head>
+
+<body>
+    <div id="mydiv"></div>
+    <button type="button" id="mybtn">Clear Time</button>
+    <script>
+
+
+        var inervalID = setInterval(() => {
+            document.getElementById("mydiv").textContent += " Hello";
+        }, 1000);
+
+        function clrtime() {
+            clearInterval(inervalID);
+        }
+        document.getElementById("mybtn").addEventListener('click', clrtime);
+
+    </script>
+</body>
+
+</html>
