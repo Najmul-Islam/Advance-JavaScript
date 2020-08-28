@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JS DOM</title>
+</head>
+
+<body>
+
+    <h1>Object Destructuring</h1>
+
+    <script>
+
+        // var course = {
+        //     courseName: "JavaScript",
+        //     duration: "SixMonths",
+        //     tutor: "GeeekyShows"
+        // };
+        // var { courseName, duration, tutor } = course;
+        // console.log(courseName);
+
+        // var { a: y = 40, z = 20 } = { a: 90 };
+        // console.log(y);
+        // console.log(z);
+
+        // var course = {
+        //     courseName: "JavaScript",
+        //     duration: "SixMonths",
+        //     tutor: "GeekyShows"
+        // };
+
+        // function show(z) {
+        //     return z;
+        // }
+
+        // var { courseName, duration, tutor } = show(course);
+        // console.log(courseName);
+
+
+        var course = {
+            courseName: "JavaScript",
+            duration: "sixMonth",
+            tutor: "GeekyShows",
+            student: {
+                stu1: "Rahul",
+                stu2: "Sonam"
+            }
+        };
+
+        var { courseName, duration, tutor, student: { stu1, stu2 } } = course;
+
+        console.log(courseName);
+        console.log(duration);
+
+    </script>
+</body>
+
+</html>
