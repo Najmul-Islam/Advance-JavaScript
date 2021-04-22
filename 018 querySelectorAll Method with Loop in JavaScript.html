@@ -31,13 +31,13 @@
     </div>
     <p id="show" class="geek">3nd p inside div</p>
     <script>
-        var data = document.querySelectorAll(".geek");
-        var len = data.length;
+        var result = document.querySelectorAll('.geek');
+        var len = result.length
         for (let i = 0; i < len; i++) {
-            var result = data[i];
-            document.write(result + "<br>");
+            var result = document.querySelectorAll(".geek")[i];
             console.log(result);
         }
+
     </script>
 </body>
 
